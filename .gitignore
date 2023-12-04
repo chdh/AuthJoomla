@@ -1,0 +1,7 @@
+.phan
+$$BackupControl.txt
+checkPhpSyntax.bat
+notes.txt
+old
+phpstan.neon
+todo.txt

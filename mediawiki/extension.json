@@ -1,0 +1,38 @@
+{
+   "manifest_version": 2,
+   "name": "AuthJoomla2023",
+   "version": "1.0.0",
+   "author": ["Christian d'Heureuse"],
+   "url": "https://github.com/giesserei/authJoomla",
+   "descriptionmsg": "Joomla-MediaWiki authentication bridge",
+   "license-name": "MIT",
+   "type": "other",
+   "requires": {
+      "MediaWiki": ">= 1.35.0"
+   },
+   "AutoloadNamespaces": {
+      "MediaWiki\\Extension\\AuthJoomla2023\\": "src/"
+   },
+   "HookHandlers": {
+      "AuthJoomla2023Hooks": {
+         "class": "MediaWiki\\Extension\\AuthJoomla2023\\AuthJoomlaHooks"
+      }
+   },
+   "Hooks": {
+      "GetPreferences": "AuthJoomla2023Hooks"
+   },
+   "AuthManagerAutoConfig": {
+      "primaryauth": {
+         "AuthJoomla2023AuthenticationProvider": {
+            "class": "MediaWiki\\Extension\\AuthJoomla2023\\AuthJoomlaAuthenticationProvider",
+            "args": []
+         }
+      }
+   },
+   "SessionProviders": {
+      "AuthJoomla2023SessionProvider": {
+         "class": "MediaWiki\\Extension\\AuthJoomla2023\\AuthJoomlaSessionProvider",
+         "args": []
+      }
+   }
+}
