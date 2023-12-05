@@ -4,7 +4,7 @@ A Joomla-MediaWiki authentication bridge.
 
 This project consists of two parts:
 
-* `MediaWiki Login`: A Joomla plugin which sets a cookie in the users web browser.
+* `MediaWiki Login`: A Joomla plugin ([JED](https://extensions.joomla.org/extension/miscellaneous/misc-bridges/user-mediawiki-login/)) which sets a cookie in the users web browser.
 * `AuthJoomla2023`: A MediaWiki extension which reads the cookie and automatically logs the user in.
 
 
@@ -23,18 +23,21 @@ The configuration parameters are mostly the same as for AuthJoomla2.
 
 ## Joomla configuration
 
-To install the Joomla plugin, create a ZIP file from the two files in the `joomla` directory and upload and install
-this zip file as a Joomla extension.
+To install the Joomla plugin,
+create a ZIP file from the two files in the `joomla` directory.
+Or use the ZIP file `mediawikilogin-x.y.z.zip` from the [releases page](https://github.com/chdh/AuthJoomla/releases).
+Upload and install this zip file as a Joomla extension.
 
-Configure the following parameters in the Joomla backend under "Extensions" / "Plugins".
+Configure the following parameters in the Joomla admin backend under "Extensions" / "Plugins".
 
-* Secret Word for cookie crypto check: (choose your own secret word)
-* Mediawiki cookie subdomain: empty if your Wiki uses the same domain (host) name as your Joomla, otherwise the name of the Wiki subdomain
+* <b>Secret Word for cookie crypto check</b>: (choose your own secret word)
+* <b>Mediawiki cookie subdomain</b>: empty if your Wiki uses the same domain (host) name as your Joomla, otherwise the name of the Wiki subdomain
 
 
 ## MediaWiki configuration
 
 Copy the files from the `mediawiki` directory to `wikifiles/extensions/AuthJoomla2023`.
+Or use the content of the ZIP file `AuthJoomla2023-x.y.z.zip` from the [releases page](https://github.com/chdh/AuthJoomla/releases).
 
 Set the following parameters in LocalSettings.php:
 
