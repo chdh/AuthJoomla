@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.0" type="plugin" group="user" method="upgrade">
-	<name>User - MediaWiki Login</name>
-	<version>2.6</version>
-	<creationDate>March 2013</creationDate>
-	<author>myOstrich Internet and Harold Prins</author>
-	<authorEmail>info@haroldprins.nl</authorEmail>
-	<authorUrl>http://www.haroldprins.nl</authorUrl>
-	<copyright>2009-2012 Harold Prins</copyright>
-	<license>GNU General Public License v2</license>
-	<description>MediaWiki Auto-Login. This plugin requires that the Mediawiki Joomla authentication module is installed and properly configured in Mediawiki.
-    </description>
-	<files>
-		<filename plugin="mediawikilogin">mediawikilogin.php</filename>
-	</files>
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field name="mediawiki_salt" type="text" size ="60" default="" label="Mediawiki Secret Word" description="The Secret Word for MediaWiki" />
-				<field name="mediawiki_cdomain" type="text" size ="60" default="" label="Mediawiki Cookie Domain" description="The Cookie Domain for MediaWiki" />
-				<field name="mediawiki_cprefix" type="text" size ="60" default="" label="Mediawiki Cookie Prefix" description="The Cookie Prefix from MediaWiki" />
-				<field name="mediawiki_cpath" type="text" size ="60" default="/" label="Mediawiki Cookie Path" description="The Cookie Path for MediaWiki" />
-				<field name="mediawiki_username" type="radio" default="1" description="Check New Usernames For MediaWiki Format" label="Check New Usernames">
-					<option value="0">JNo</option>
-					<option value="1">JYes</option>
-				</field>
-				<field name="mediawiki_usernameregex" type="textarea" class="inputbox" rows="3" cols="30" label="Username Regex" description="Username Regex" />
-				<field name="mediawiki_usernameerrormessage" type="textarea" class="inputbox" rows="3" cols="30" label="Regex Error Message" description="Regex Error Message" default="Please enter a valid username." />
-			</fieldset>
-		</fields>
-	</config>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+   <name>MediaWiki Login</name>
+   <author>Christian d'Heureuse</author>
+   <authorEmail>chdh@inventec.ch</authorEmail>
+   <authorUrl>https://www.inventec.ch/chdh</authorUrl>
+   <creationDate>2023-12-04</creationDate>
+   <copyright>2023 Christian d'Heureuse</copyright>
+   <license>MIT</license>
+   <version>1.0.0</version>
+   <description>MediaWiki Auto-Login. Joomla part of AuthJoomla 2023.</description>
+   <files>
+      <filename plugin="mediawikilogin">mediawikilogin.php</filename>
+   </files>
+   <config>
+      <fields name="params">
+         <fieldset name="basic">
+            <field name="mediawiki_salt" type="text" size ="60" default="" label="Secret word for cookie crypto check"/>
+            <field name="mediawiki_cdomain" type="text" size ="60" default="" label="Mediawiki cookie subdomain (or empty if same as Joomla)"/>
+         </fieldset>
+      </fields>
+   </config>
 </extension>
