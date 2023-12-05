@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="user" method="upgrade">
-   <name>MediaWiki Login</name>
+   <name>User - MediaWiki Login</name>
    <author>Christian d'Heureuse</author>
    <authorEmail>chdh@inventec.ch</authorEmail>
    <authorUrl>https://www.inventec.ch/chdh</authorUrl>
