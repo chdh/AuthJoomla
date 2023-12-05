@@ -1,0 +1,19 @@
+<updates>
+   <update>
+      <name>User - MediaWiki Login</name>
+      <description>Joomla-MediaWiki authentication bridge</description>
+      <element>mediawikilogin</element>
+      <type>plugin</type>
+      <version>1.0.0</version>
+      <infourl title="AuthJoomla 2023">https://github.com/chdh/AuthJoomla/releases/tag/1.0.0</infourl>
+      <downloads>
+         <downloadurl type="full" format="zip">https://github.com/chdh/AuthJoomla/releases/download/1.0.0/mediawikilogin-1.0.0.zip</downloadurl>
+      </downloads>
+      <tags>
+         <tag>stable</tag>
+      </tags>
+      <maintainer>Christian d'Heureuse</maintainer>
+      <maintainerurl>https://www.inventec.ch/chdh</maintainerurl>
+      <targetplatform name="joomla" version="3\.[0-9]|((4\.[0-9])"/>
+   </update>
+</updates>

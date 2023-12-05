@@ -20,4 +20,7 @@
          </fieldset>
       </fields>
    </config>
+   <updateservers>
+      <server type="extension" name="AuthJoomla 2023 update site">https://raw.githubusercontent.com/chdh/AuthJoomla/master/JoomlaUpdateManifest.xml</server>
+   </updateservers>
 </extension>
