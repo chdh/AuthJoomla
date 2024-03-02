@@ -31,7 +31,7 @@ Upload and install this zip file as a Joomla extension.
 Configure the following parameters in the Joomla admin backend under "Extensions" / "Plugins".
 
 * <b>Secret Word for cookie crypto check</b>: (choose your own secret word)
-* <b>Mediawiki cookie subdomain</b>: empty if your Wiki uses the same domain (host) name as your Joomla, otherwise the name of the Wiki subdomain
+* <b>MediaWiki cookie subdomain</b>: empty if your Wiki uses the same domain (host) name as your Joomla, otherwise the name of the Wiki subdomain
 
 
 ## MediaWiki configuration

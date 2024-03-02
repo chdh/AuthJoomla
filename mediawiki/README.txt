@@ -3,7 +3,8 @@ AuthJoomla2023 - MediaWiki extension for Joomla integration
 -----------------------------------------------------------
 
 This extension is the MediaWiki part of the Joomla-MediaWiki authentication bridge.
-Developed for MediaWiki Version 1.40.
+Developed for MediaWiki version 1.40.
+Tested with MediaWiki versions 1.40 - 1.41.
 Developed by Christian d'Heureuse, chdh@inventec.ch, 2023
 License: MIT
 
