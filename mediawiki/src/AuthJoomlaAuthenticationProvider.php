@@ -30,11 +30,11 @@ class AuthJoomlaAuthenticationProvider extends AbstractPasswordPrimaryAuthentica
 
    public function beginPrimaryAccountCreation ($user, $creator, array $reqs) {
       // MWDebug::log("AuthJoomlaAuthenticationProvider.beginPrimaryAccountCreation()");
-      return AuthenticationResponse::newFail(); }
+      return AuthenticationResponse::newAbstain(); }
 
    public function beginPrimaryAuthentication (array $reqs) {
       // MWDebug::log("AuthJoomlaAuthenticationProvider.beginPrimaryAuthentication()");
-      return AuthenticationResponse::newFail(); }
+      return AuthenticationResponse::newAbstain(); }
 
    public function providerAllowsAuthenticationDataChange (AuthenticationRequest $req, $checkData = true) {
       // MWDebug::log("AuthJoomlaAuthenticationProvider.providerAllowsAuthenticationDataChange()");
